@@ -1,10 +1,6 @@
 **# WellTrack - Next Chapter Project Supplement Tracker**
 
-
-
 ![WellTrack Dashboard Screenshot](./screenshots/dashboard-screenshot.png)
-
-
 
 **\*A visual preview of the functional WellTrack dashboard application.\***
 
