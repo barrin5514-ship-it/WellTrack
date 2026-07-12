@@ -2,7 +2,7 @@
 
 
 
-**!\[WellTrack Dashboard Screenshot](./screenshots/dashboard-screenshot.png)**
+**!\[WellTrack Dashboard Screenshot](./screenshots/dashboard-screenshot.png)
 
 
 
