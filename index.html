@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>WellTrack | Daily Supplement & Medication Tracker</title>
+
+    <meta
+        name="description"
+        content="Track supplements, medications, hydration, reminders, and daily wellness goals with WellTrack."
+    >
+
+    <meta
+        name="keywords"
+        content="supplements, vitamins, medication tracker, hydration, wellness, health"
+    >
+
+    <meta
+        name="author"
+        content="Brandon Arrington"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- ==================================================
+         HEADER
+    =================================================== -->
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <h1>🌿 WellTrack</h1>
+
+            <p class="tagline">
+                Track your supplements, medications, hydration, and wellness—all in one place.
+            </p>
+
+            <p class="welcome">
+                Welcome back! Stay consistent and keep building healthy habits.
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- ==================================================
+         NAVIGATION
+    =================================================== -->
+
+    <nav aria-label="Main navigation">
+
+        <ul>
+
+            <li>
+                <a href="#dashboard">
+                    🏠 Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="#today">
+                    💊 Supplements
+                </a>
+            </li>
+
+            <li>
+                <a href="#reminders">
+                    🔔 Reminders
+                </a>
+            </li>
+
+            <li>
+                <a href="#water">
+                    💧 Hydration
+                </a>
+            </li>
+
+            <li>
+                <a href="#history">
+                    📋 Activity
+                </a>
+            </li>
+
+            <li>
+                <a href="#quick-actions">
+                    ⚡ Quick Actions
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ==================================================
+         MAIN CONTENT
+    =================================================== -->
+
+    <main>
+
+        <!-- ==================================================
+             DASHBOARD
+        =================================================== -->
+
+        <section
+            id="dashboard"
+            aria-labelledby="dashboard-heading"
+        >
+
+            <h2 id="dashboard-heading">
+                Dashboard
+            </h2>
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        💊 Supplements Taken
+                    </h3>
+
+                    <p>
+                        0 / 14
+                    </p>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        💧 Water Intake
+                    </h3>
+
+                    <p>
+                        64 oz
+                    </p>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        🔥 Daily Streak
+                    </h3>
+
+                    <p>
+                        12 Days
+                    </p>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        ⏰ Next Reminder
+                    </h3>
+
+                    <p>
+                        Vitamin D3 — 2:00 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             SEARCH
+        =================================================== -->
+
+        <section
+            id="search"
+            aria-labelledby="search-heading"
+        >
+
+            <h2 id="search-heading">
+                Find a Supplement
+            </h2>
+
+            <input
+                type="search"
+                id="searchBar"
+                name="supplement-search"
+                placeholder="Search supplements..."
+                aria-label="Search supplements"
+                autocomplete="off"
+            >
+
+        </section>
+
+        <!-- ==================================================
+             QUICK ACTIONS
+        =================================================== -->
+
+        <section
+            id="quick-actions"
+            aria-labelledby="quick-actions-heading"
+        >
+
+            <h2 id="quick-actions-heading">
+                Quick Actions
+            </h2>
+
+            <div class="action-buttons">
+
+                <button type="button">
+                    Add Supplement
+                </button>
+
+                <button type="button">
+                    Add Medication
+                </button>
+
+                <button type="button">
+                    Log Water
+                </button>
+
+                <button type="button">
+                    View Schedule
+                </button>
+
+                <button
+                    type="button"
+                    id="reset-btn"
+                    aria-label="Reset today's supplement and hydration progress"
+                >
+                    Reset Today
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             TODAY'S SUPPLEMENTS
+        =================================================== -->
+
+        <section
+            id="today"
+            aria-labelledby="supplements-heading"
+        >
+
+            <h2 id="supplements-heading">
+                Today's Supplement Schedule
+            </h2>
+
+            <p class="section-description">
+                Stay on track by checking off each supplement as you take it.
+            </p>
+
+            <div class="supplement-grid">
+
+                <!-- Ashwagandha -->
+
+                <article class="supplement-card">
+
+                    <img
+                        src="images/ashwagandha.jpg"
+                        alt="Ashwagandha supplement"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>
+                        Ashwagandha
+                    </h3>
+
+                    <p>
+                        <strong>❤️ Purpose:</strong>
+                        Stress, anxiety, and sleep support
+                    </p>
+
+                    <p>
+                        <strong>💊 Dosage:</strong>
+                        600 mg
+                    </p>
+
+                    <p>
+                        <strong>🕒 Best Time:</strong>
+                        Evening
+                    </p>
+
+                    <p>
+                        <strong>🍽 With Food:</strong>
+                        Yes
+                    </p>
+
+                    <button
+                        type="button"
+                        id="ashwagandha-btn"
+                        aria-pressed="false"
+                        aria-label="Mark Ashwagandha as taken"
+                    >
+                        ✔ Mark Taken
+                    </button>
+
+                </article>
+
+                <!-- Calcium, Magnesium and Zinc -->
+
+                <article class="supplement-card">
+
+                    <img
+                        src="images/calcium-magnesium-zinc.jpg"
+                        alt="Calcium, magnesium, and zinc supplement"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>
+                        Calcium • Magnesium • Zinc
+                    </h3>
+
+                    <p>
+                        <strong>❤️ Purpose:</strong>
+                        Bone health and muscle function
+                    </p>
+
+                    <p>
+                        <strong>💊 Dosage:</strong>
+                        1 tablet
+                    </p>
+
+                    <p>
+                        <strong>🕒 Best Time:</strong>
+                        Evening
+                    </p>
+
+                    <p>
+                        <strong>🍽 With Food:</strong>
+                        Yes
+                    </p>
+
+                    <button
+                        type="button"
+                        id="calmag-btn"
+                        aria-pressed="false"
+                        aria-label="Mark Calcium Magnesium Zinc as taken"
+                    >
+                        ✔ Mark Taken
+                    </button>
+
+                </article>
+
+                <!-- Creatine -->
+
+                <article class="supplement-card">
+
+                    <img
+                        src="images/creatine.jpg"
+                        alt="Creatine supplement"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>
+                        Creatine
+                    </h3>
+
+                    <p>
+                        <strong>❤️ Purpose:</strong>
+                        Strength and muscle recovery
+                    </p>
+
+                    <p>
+                        <strong>💊 Dosage:</strong>
+                        5 g
+                    </p>
+
+                    <p>
+                        <strong>🕒 Best Time:</strong>
+                        Morning or after a workout
+                    </p>
+
+                    <p>
+                        <strong>🍽 With Food:</strong>
+                        Optional
+                    </p>
+
+                    <button
+                        type="button"
+                        id="creatine-btn"
+                        aria-pressed="false"
+                        aria-label="Mark Creatine as taken"
+                    >
+                        ✔ Mark Taken
+                    </button>
+
+                </article>
+
+                <!-- Vitamin D3 -->
+
+                <article class="supplement-card">
+
+                    <img
+                        src="images/vitamin-d3.jpg"
+                        alt="Vitamin D3 supplement"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>
+                        Vitamin D3
+                    </h3>
+
+                    <p>
+                        <strong>❤️ Purpose:</strong>
+                        Immune system and bone health
+                    </p>
+
+                    <p>
+                        <strong>💊 Dosage:</strong>
+                        5000 IU
+                    </p>
+
+                    <p>
+                        <strong>🕒 Best Time:</strong>
+                        Morning
+                    </p>
+
+                    <p>
+                        <strong>🍽 With Food:</strong>
+                        Yes
+                    </p>
+
+                    <button
+                        type="button"
+                        id="vitamind-btn"
+                        aria-pressed="false"
+                        aria-label="Mark Vitamin D3 as taken"
+                    >
+                        ✔ Mark Taken
+                    </button>
+
+                </article>
+
+                <!-- Triple Omega -->
+
+                <article class="supplement-card">
+
+                    <img
+                        src="images/triple-omega.jpg"
+                        alt="Triple Omega supplement"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>
+                        Triple Omega
+                    </h3>
+
+                    <p>
+                        <strong>❤️ Purpose:</strong>
+                        Heart and brain health
+                    </p>
+
+                    <p>
+                        <strong>💊 Dosage:</strong>
+                        1000 mg
+                    </p>
+
+                    <p>
+                        <strong>🕒 Best Time:</strong>
+                        Lunch
+                    </p>
+
+                    <p>
+                        <strong>🍽 With Food:</strong>
+                        Yes
+                    </p>
+
+                    <button
+                        type="button"
+                        id="omega-btn"
+                        aria-pressed="false"
+                        aria-label="Mark Triple Omega as taken"
+                    >
+                        ✔ Mark Taken
+                    </button>
+
+                </article>
+
+                <!-- Copper -->
+
+                <article class="supplement-card">
+
+                    <img
+                        src="images/copper.jpg"
+                        alt="Copper supplement"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>
+                        Copper
+                    </h3>
+
+                    <p>
+                        <strong>❤️ Purpose:</strong>
+                        Immune function and red blood cell production
+                    </p>
+
+                    <p>
+                        <strong>💊 Dosage:</strong>
+                        2 mg
+                    </p>
+
+                    <p>
+                        <strong>🕒 Best Time:</strong>
+                        Morning
+                    </p>
+
+                    <p>
+                        <strong>🍽 With Food:</strong>
+                        Yes
+                    </p>
+
+                    <button
+                        type="button"
+                        id="copper-btn"
+                        aria-pressed="false"
+                        aria-label="Mark Copper as taken"
+                    >
+                        ✔ Mark Taken
+                    </button>
+
+                </article>
+
+                <!-- Ginger -->
+
+                <article class="supplement-card">
+
+                    <img
+                        src="images/ginger.jpg"
+                        alt="Ginger supplement"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>
+                        Ginger
+                    </h3>
+
+                    <p>
+                        <strong>❤️ Purpose:</strong>
+                        Digestion and inflammation support
+                    </p>
+
+                    <p>
+                        <strong>💊 Dosage:</strong>
+                        500 mg
+                    </p>
+
+                    <p>
+                        <strong>🕒 Best Time:</strong>
+                        Morning
+                    </p>
+
+                    <p>
+                        <strong>🍽 With Food:</strong>
+                        Yes
+                    </p>
+
+                    <button
+                        type="button"
+                        id="ginger-btn"
+                        aria-pressed="false"
+                        aria-label="Mark Ginger as taken"
+                    >
+                        ✔ Mark Taken
+                    </button>
+
+                </article>
+
+                <!-- Ginkgo Biloba -->
+
+                <article class="supplement-card">
+
+                    <img
+                        src="images/ginkgo.jpg"
+                        alt="Ginkgo Biloba supplement"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>
+                        Ginkgo Biloba
+                    </h3>
+
+                    <p>
+                        <strong>❤️ Purpose:</strong>
+                        Memory and cognitive support
+                    </p>
+
+                    <p>
+                        <strong>💊 Dosage:</strong>
+                        120 mg
+                    </p>
+
+                    <p>
+                        <strong>🕒 Best Time:</strong>
+                        Morning
+                    </p>
+
+                    <p>
+                        <strong>🍽 With Food:</strong>
+                        Optional
+                    </p>
+
+                    <button
+                        type="button"
+                        id="ginkgo-btn"
+                        aria-pressed="false"
+                        aria-label="Mark Ginkgo Biloba as taken"
+                    >
+                        ✔ Mark Taken
+                    </button>
+
+                </article>
+
+                <!-- Iron -->
+
+                <article class="supplement-card">
+
+                    <img
+                        src="images/iron.jpg"
+                        alt="Iron supplement"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>
+                        Iron
+                    </h3>
+
+                    <p>
+                        <strong>❤️ Purpose:</strong>
+                        Healthy red blood cells and energy support
+                    </p>
+
+                    <p>
+                        <strong>💊 Dosage:</strong>
+                        18 mg
+                    </p>
+
+                    <p>
+                        <strong>🕒 Best Time:</strong>
+                        Morning
+                    </p>
+
+                    <p>
+                        <strong>🍽 With Food:</strong>
+                        No
+                    </p>
+
+                    <button
+                        type="button"
+                        id="iron-btn"
+                        aria-pressed="false"
+                        aria-label="Mark Iron as taken"
+                    >
+                        ✔ Mark Taken
+                    </button>
+
+                </article>
+
+                <!-- Mushroom Complex -->
+
+                <article class="supplement-card">
+
+                    <img
+                        src="images/mushroom-complex.jpg"
+                        alt="Mushroom Complex supplement"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>
+                        Mushroom Complex
+                    </h3>
+
+                    <p>
+                        <strong>❤️ Purpose:</strong>
+                        Immune system and brain health support
+                    </p>
+
+                    <p>
+                        <strong>💊 Dosage:</strong>
+                        1000 mg
+                    </p>
+
+                    <p>
+                        <strong>🕒 Best Time:</strong>
+                        Morning
+                    </p>
+
+                    <p>
+                        <strong>🍽 With Food:</strong>
+                        Optional
+                    </p>
+
+                    <button
+                        type="button"
+                        id="mushroom-btn"
+                        aria-pressed="false"
+                        aria-label="Mark Mushroom Complex as taken"
+                    >
+                        ✔ Mark Taken
+                    </button>
+
+                </article>
+
+                <!-- Nitric Oxide -->
+
+                <article class="supplement-card">
+
+                    <img
+                        src="images/nitric-oxide.jpg"
+                        alt="Nitric Oxide supplement"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>
+                        Nitric Oxide
+                    </h3>
+
+                    <p>
+                        <strong>❤️ Purpose:</strong>
+                        Blood flow and workout performance
+                    </p>
+
+                    <p>
+                        <strong>💊 Dosage:</strong>
+                        3 capsules
+                    </p>
+
+                    <p>
+                        <strong>🕒 Best Time:</strong>
+                        30 minutes before a workout
+                    </p>
+
+                    <p>
+                        <strong>🍽 With Food:</strong>
+                        Optional
+                    </p>
+
+                    <button
+                        type="button"
+                        id="nitric-btn"
+                        aria-pressed="false"
+                        aria-label="Mark Nitric Oxide as taken"
+                    >
+                        ✔ Mark Taken
+                    </button>
+
+                </article>
+
+                <!-- Testosterone Complex -->
+
+                <article class="supplement-card">
+
+                    <img
+                        src="images/testosterone-complex.jpg"
+                        alt="Testosterone Complex supplement"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>
+                        Testosterone Complex
+                    </h3>
+
+                    <p>
+                        <strong>❤️ Purpose:</strong>
+                        Hormone and performance support
+                    </p>
+
+                    <p>
+                        <strong>💊 Dosage:</strong>
+                        2 capsules
+                    </p>
+
+                    <p>
+                        <strong>🕒 Best Time:</strong>
+                        Morning
+                    </p>
+
+                    <p>
+                        <strong>🍽 With Food:</strong>
+                        Yes
+                    </p>
+
+                    <button
+                        type="button"
+                        id="testosterone-btn"
+                        aria-pressed="false"
+                        aria-label="Mark Testosterone Complex as taken"
+                    >
+                        ✔ Mark Taken
+                    </button>
+
+                </article>
+
+                <!-- Turmeric -->
+
+                <article class="supplement-card">
+
+                    <img
+                        src="images/turmeric.jpg"
+                        alt="Turmeric supplement"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>
+                        Turmeric
+                    </h3>
+
+                    <p>
+                        <strong>❤️ Purpose:</strong>
+                        Joint health and inflammation support
+                    </p>
+
+                    <p>
+                        <strong>💊 Dosage:</strong>
+                        500 mg
+                    </p>
+
+                    <p>
+                        <strong>🕒 Best Time:</strong>
+                        Lunch
+                    </p>
+
+                    <p>
+                        <strong>🍽 With Food:</strong>
+                        Yes
+                    </p>
+
+                    <button
+                        type="button"
+                        id="turmeric-btn"
+                        aria-pressed="false"
+                        aria-label="Mark Turmeric as taken"
+                    >
+                        ✔ Mark Taken
+                    </button>
+
+                </article>
+
+                <!-- Vitamin B Complex -->
+
+                <article class="supplement-card">
+
+                    <img
+                        src="images/vitamin-b-complex.jpg"
+                        alt="Vitamin B Complex supplement"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>
+                        Vitamin B Complex
+                    </h3>
+
+                    <p>
+                        <strong>❤️ Purpose:</strong>
+                        Energy production and nervous system support
+                    </p>
+
+                    <p>
+                        <strong>💊 Dosage:</strong>
+                        1 tablet
+                    </p>
+
+                    <p>
+                        <strong>🕒 Best Time:</strong>
+                        Morning
+                    </p>
+
+                    <p>
+                        <strong>🍽 With Food:</strong>
+                        Yes
+                    </p>
+
+                    <button
+                        type="button"
+                        id="vitaminb-btn"
+                        aria-pressed="false"
+                        aria-label="Mark Vitamin B Complex as taken"
+                    >
+                        ✔ Mark Taken
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             UPCOMING REMINDERS
+        =================================================== -->
+
+        <section
+            id="reminders"
+            aria-labelledby="reminders-heading"
+        >
+
+            <h2 id="reminders-heading">
+                🔔 Upcoming Reminders
+            </h2>
+
+            <ul>
+
+                <li>
+                    🕑 2:00 PM — Vitamin D3
+                </li>
+
+                <li>
+                    🕕 6:00 PM — Ashwagandha
+                </li>
+
+                <li>
+                    🕗 8:00 PM — Calcium • Magnesium • Zinc
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ==================================================
+             HYDRATION
+        =================================================== -->
+
+        <section
+            id="water"
+            aria-labelledby="water-heading"
+        >
+
+            <h2 id="water-heading">
+                💧 Hydration Tracker
+            </h2>
+
+            <p>
+                <strong>Today's Goal:</strong>
+                128 oz
+            </p>
+
+            <progress
+                value="64"
+                max="128"
+                aria-label="Daily water intake"
+            >
+                64 of 128 ounces
+            </progress>
+
+            <p>
+                64 oz / 128 oz
+            </p>
+
+            <button
+                type="button"
+                id="water-btn"
+            >
+                ➕ Add 12 oz
+            </button>
+
+        </section>
+
+        <!-- ==================================================
+             RECENT ACTIVITY
+        =================================================== -->
+
+        <section
+            id="history"
+            aria-labelledby="history-heading"
+        >
+
+            <h2 id="history-heading">
+                📋 Recent Activity
+            </h2>
+
+            <ul aria-live="polite">
+
+                <li>
+                    No activity has been recorded today.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- ==================================================
+             WELLNESS TIP
+        =================================================== -->
+
+        <section
+            id="tip"
+            aria-labelledby="tip-heading"
+        >
+
+            <h2 id="tip-heading">
+                💡 Wellness Tip of the Day
+            </h2>
+
+            <blockquote>
+                Consistency beats perfection. Small healthy habits practiced every day lead to long-term results.
+            </blockquote>
+
+        </section>
+        <!-- ==================================================
+             INFORMATION NOTICE
+        =================================================== -->
+
+        <section
+            id="notice"
+            aria-labelledby="notice-heading"
+        >
+
+            <h2 id="notice-heading">
+                Important Information
+            </h2>
+
+            <p>
+                WellTrack is a demonstration project for organizing supplement and wellness routines. It does not replace advice from a doctor, pharmacist, or other qualified healthcare professional.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 WellTrack
+        </p>
+
+        <p>
+            Designed and developed by Brandon Arrington
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
